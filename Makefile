@@ -76,7 +76,7 @@ bootplus-js: bootplus/js/*.js
 
 bootplus/js/*.js: js/*.js
 	mkdir -p bootplus/js
-	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-affix.js > bootplus/js/bootstrap.js
+	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-affix.js js/bootstrap-typeahead.js > bootplus/js/bootstrap.js
 	uglifyjs bootplus/js/bootstrap.js -nc > bootplus/js/bootstrap.min.tmp.js
 	echo "/*!\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > bootplus/js/copyright.js
 	cat bootplus/js/copyright.js bootplus/js/bootstrap.min.tmp.js > bootplus/js/bootstrap.min.js
@@ -94,7 +94,8 @@ bootplus/css/*.css: less/*.less
 	./node_modules/.bin/recess --compress ${BOOTPLUS_LESS} > bootplus/css/bootplus.min.css
 	./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.css
 	./node_modules/.bin/recess --compress ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.min.css
-	cp docs/assets/css/font-awesome*.* bootplus/css/
+	mkdir -p bootplus/font
+	cp -R docs/assets/font/*.* bootplus/font
 
 #
 # IMAGES

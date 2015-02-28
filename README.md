@@ -1,4 +1,4 @@
-# [Bootplus v1.0.3](https://github.io/aozora/bootplus)
+# [Bootplus v1.0.5](https://github.io/aozora/bootplus)
 
 Bootplus is a front-end framework for faster and easier web development inspired by the lates Google+ look & feel, created and maintained by [Aozora](http://twitter.com/aozoralabs).
 
@@ -14,7 +14,7 @@ Three quick start options are available:
 * [Download the latest release](http://aozora.github.io/bootplus/zipball/master).
 * Clone the repo: `git clone git://github.com/aozora/bootplus.git`.
 
-Read the [Getting Started page](http://aozora.github.io/bootplus/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting Started page](http://aozora.github.io/bootplus/getting-started) for information on the framework contents, templates and examples, and more.
 
 
 

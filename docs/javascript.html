@@ -37,6 +37,19 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3182578-9']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
   </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -1174,24 +1187,24 @@ $('#my-alert').bind('closed', function () {
             <h4>Single toggle</h4>
             <p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
-              <button type="button" class="btn btn-primary" data-toggle="button">Single Toggle</button>
+              <button type="button" class="btn" data-toggle="button">Single Toggle</button>
             </div>
-            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
 
             <h4>Checkbox</h4>
             <p>Add <code>data-toggle="buttons-checkbox"</code> for checkbox style toggling on btn-group.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
               <div class="btn-group" data-toggle="buttons-checkbox">
-                <button type="button" class="btn btn-primary">Left</button>
-                <button type="button" class="btn btn-primary">Middle</button>
-                <button type="button" class="btn btn-primary">Right</button>
+                <button type="button" class="btn">Left</button>
+                <button type="button" class="btn">Middle</button>
+                <button type="button" class="btn">Right</button>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1199,16 +1212,16 @@ $('#my-alert').bind('closed', function () {
             <p>Add <code>data-toggle="buttons-radio"</code> for radio style toggling on btn-group.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
               <div class="btn-group" data-toggle="buttons-radio">
-                <button type="button" class="btn btn-primary">Left</button>
-                <button type="button" class="btn btn-primary">Middle</button>
-                <button type="button" class="btn btn-primary">Right</button>
+                <button type="button" class="btn">Left</button>
+                <button type="button" class="btn">Middle</button>
+                <button type="button" class="btn">Right</button>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group" data-toggle="buttons-radio"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn"&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1780,6 +1793,21 @@ $('.carousel').carousel({
     <script src="assets/js/application.js"></script>
 
 
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
 
   </body>
 </html>

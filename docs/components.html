@@ -37,6 +37,19 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3182578-9']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
   </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -1332,7 +1345,12 @@
                     <ul class="nav">
                       <li class="active"><a href="#">Home</a></li>
                       <li><a href="#">Link</a></li>
-                      <li><a href="#">Link</a></li>
+                      <li>
+                        <a href="#">
+                           <i class="icon-link"></i>
+                           Link
+                        </a>
+                      </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -2147,7 +2165,7 @@
           <div class="bs-docs-example">
             <div class="alert alert-error">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <strong>Oh snap!</strong> Change a few things up and try submitting again.
+              <strong>Oh snap!</strong> Change a few things up and try submitting again. <a href="#">Link on alert</a>
             </div>
           </div>
 <pre class="prettyprint linenums">
@@ -2160,7 +2178,7 @@
           <div class="bs-docs-example">
             <div class="alert alert-success">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <strong>Well done!</strong> You successfully read this important alert message.
+              <strong>Well done!</strong> You successfully read this important alert message. <a href="#">Link on alert</a>
             </div>
           </div>
 <pre class="prettyprint linenums">
@@ -2173,7 +2191,7 @@
           <div class="bs-docs-example">
             <div class="alert alert-info">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+              <strong>Heads up!</strong> This alert needs your attention, but it's not super important. <a href="#">Link on alert</a>
             </div>
           </div>
 <pre class="prettyprint linenums">
@@ -2626,6 +2644,21 @@ class="clearfix"
     <script src="assets/js/application.js"></script>
 
 
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
 
   </body>
 </html>
